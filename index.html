@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+        <title>Convert Money</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1> Convert Money</h1>
+            </header>
+            <main>
+                <label>
+                    Converter <b>de</b>
+                    <select>
+                        <option>
+                            R$ <b>Real brasileiro</b>
+                        </option>
+                    </select>
+                </label>
+                <label>
+                    Converter <b>para</b>
+                    <select id="select-currency">
+                        <option>
+                            US$ <b>Dólar americano</b>
+                        </option>
+                        <option>
+                            € <b>Euro</b>
+                        </option>
+                        <option>
+                            ₿ <b>Biticoin</b>
+                        </option>
+                    </select>
+                </label>
+                <label >
+                    Valor
+                    <input type="text" placeholder="R$ 10.000,00" id="input-converter">
+                </label>
+                <button type="button">Converter</button>
+                <section>
+                    <div class="currency-container">
+                        <img src="./assets/brasil 2.svg" alt="bandeira-brasil">
+                        <p class="currency-name">Real</p>
+                        <p class="currency-value" id="real-value-text">R$ 10.000,00</p>
+                    </div>
+                    <img src="./assets/Group.svg" alt="seta"class="arrow">
+                    <div class="currency-container">
+                        <img src="./assets/dolar.svg" alt="bandeira-Estados-Unidos" id="currency-image">
+                        <p class="currency-name" id="currency-name">Dólar</p>
+                        <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </body>
+</html>
